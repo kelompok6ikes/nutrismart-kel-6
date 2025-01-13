@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NUTRISMART - Edukasi Gizi Untuk Anak Sekolah Dasar</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        
+
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid position-fixed border-bottom bg-light">
+            <div class="container topbar bg-primary d-none d-lg-block py-2" style="border-radius: 0 30px">
+                <div class="d-flex justify-content-between">
+                    <div class="top-info ps-2">
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">IKES - Payung Negeri Pekanbaru</a></small>
+                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">info@payungnegeri.ac.id</a></small>
+                    </div>
+                    <div class="top-link pe-2">
+                        <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-secondary"></i></a>
+                        <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-twitter text-secondary"></i></a>
+                        <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-instagram text-secondary"></i></a>
+                        <a href="" class="btn btn-light btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-secondary"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-0">
+                <nav class="navbar navbar-light navbar-expand-xl py-1">
+                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Nutri<span class="text-secondary">Smart</span></h1></a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="IMT.html" class="nav-item nav-link active">IMT</a>
+                            <a href="service.html" class="nav-item nav-link">AKG</a>
+                            <a href="program.html" class="nav-item nav-link">Video</a>
+                            <a href="event.html" class="nav-item nav-link">Orangtua</a>
+                            
+                            </div>
+                            <div class="d-flex flex-column pe-3 border-primary">
+                                <span class="text-primary">Have any questions?</span>
+                                <a href="#"><span class="text-secondary">Fira: 0858 3754 9492</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- IMT Start-->
+        <div class="container-fluid py-5 bg-light">
+            <div class="container py-2">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                        <br><br><br><br><br><br>
+         
+                        <form name="bmiForm">
+                            <div class="text-center border-primary border bg-white">
+                                <div class="service-content d-flex align-items-center justify-content-center p-4">
+                                    
+                            <div class="bmi-calculator">
+                            <h1 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Hitung IMT</h1>
+                            
+                            <div class="bmi-calculator-weight">
+                                <input class="weight-slider" name="realweight" id="myWeight" type="range" min="25" max="180" value="60" />
+                                <p style="margin-top: 1.8em;">
+                                BERAT BADAN:
+                                <input name="Teža" id="inputWeight" type="number" value="60" min="25" max="180" oninput="showValWeight(this.value)" />
+                                <span id="weight"></span> kg
+                                </p>
+                            </div>
+                            <div class="bmi-calculator-height">
+                                <input class="height-slider" name="realheight" id="myHeight" type="range" min="100" max="220" value="160">
+                                <p style="margin-top: 1.8em;">
+                                TINGGI BADAN:
+                                <input name="Višina" id="inputHeight" type="number" value="160" min="100" max="220" oninput="showValHeight(this.value)" />
+                                <span id="height"></span> cm
+                                </p>
+                            </div>
+                            <input class="gumb" type="button" value="Hitung" onclick="calculateBmi()" style="margin-top: 0.5em">
+                            <p style="margin-top: 1em;font-size: 1.2em;">
+                                <strong>IMT ANDA:</strong>
+                                <span id="yourbmi" style="font-size: 1.2em;margin-left: 8px;"></span>
+                            </p>
+                            <p></p>
+                            <p>
+                                <span id="evaluationMessage"></span>
+                            </p>
+                            </div>
+                            </div>
+                            </div>
+                        </form>
+        <!-- IMT End -->
+                    </div>
+                    <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+                        <h1 class="text-dark mb-4 display-5">Indeks Massa Tubuh</h1>
+                        <p class="text-dark mb-4">Indeks massa tubuh adalah ukuran yang digunakan untuk mengetahui status gizi seseorang yang didapatkan dari perbandingan berat dan tinggi badan.  Maka itu, setiap orang harus menghitung berapa nilai IMT-nya agar tahu status gizi tubuhnya normal atau tidak.
+                            <br>
+                            Perhitungan IMT adalah dengan membagi berat badan (dalam kilogram) dengan tinggi badan (dalam meter atau centimeter kuadrat). Contohnya, Anda memiliki berat badan sebesar 68 kg dengan tinggi 165 cm (16,5 meter).
+                            <br>
+                            Jadi nilai IMT yang dimiliki adalah: 68 ÷ (1,65x1,65) = 24.98 Kg/m2
+                        </p>
+                        <div class="row mb-4">
+                            <div class="col-lg-6">
+                                <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>< 18,5: Berat badan kurang</h6>
+                                <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>18,5 – 24,9: Berat badan normal</h6>
+                                <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>25 – 29,9: Kelebihan berat badan</h6>
+                                <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>≥ 30: Obesitas</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edukasi Orangtua Start -->
+    <div class="container-fluid events py-5 bg-white">
+        <div class="container py-1">
+                <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 1000px;">
+                    <h1 class="mb-5 display-6">Solusi setiap masalah tubuh ideal pada anak usia sekolah</h1>
+                </div>
+            <div class="row g-5 justify-content-center">
+
+                <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="events-item bg-white border border-primary rounded">
+                        <div class="events-inner position-relative">
+                            <div class="px-4 py-2 px-md-1 bg-secondary text-white text-center events-rate">Mempertahankan tubuh ideal</div>
+                                
+                                    <div class="row mb-3 px-md-3">
+                                        <div class="col-lg-12"><br><br><br>
+                                            <h5 class="mb-3"><i class="fas fa-plus-circle me-2 text-secondary"></i>Peningkatan Keterampilan Akademis dan Sosial. Pembelajaran yang Menyenangkan: Anak-anak belajar lebih baik ketika mereka menikmati proses belajar</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3 px-md-3">
+                                        <div class="col-lg-12">
+                                            <h5 class="mb-3"><i class="fas fa-plus-circle me-2 text-secondary"></i>Sarapan yang sehat dan bergizi sangat penting untuk mendukung konsentrasi dan energi anak di sekolah</h5>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="events-item bg-white border border-primary rounded">
+                            <div class="events-inner position-relative">
+                                <div class="px-4 py-2 px-md-1 bg-secondary text-white text-center events-rate">Berat badan berkurang</div>
+                                
+                                <div class="row mb-3 px-md-3">
+                                    <div class="col-lg-12"><br><br><br>
+                                        <h5 class="mb-3"><i class="fas fa-minus-circle me-2 text-secondary"></i>Makanan Bergizi dan Seimbang. Anak-anak perlu diberikan makanan dengan kandungan kalori yang lebih tinggi, namun tetap seimbang</h5>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3 px-md-3">
+                                    <div class="col-lg-12">
+                                        <h5 class="mb-3"><i class="fas fa-minus-circle me-2 text-secondary"></i>Meningkatkan frekuensi makan, dengan memberikan makan 5-6 kali sehari, termasuk camilan sehat yang tinggi kalori seperti yogurt, keju, atau kacang-kacangan</h5>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3 px-md-3">
+                                    <div class="col-lg-12">
+                                        <h5 class="mb-3"><i class="fas fa-minus-circle me-2 text-secondary"></i>Pemantauan Perkembangan dan Pengukuran Berat Badan Pengukuran Rutin</h5>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3 px-md-3">
+                                    <div class="col-lg-12">
+                                        <h5 class="mb-3"><i class="fas fa-minus-circle me-2 text-secondary"></i>Tidur yang Cukup: Anak-anak usia sekolah membutuhkan 9-11 jam tidur setiap malam</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="events-item bg-white border border-primary rounded">
+                            <div class="events-inner position-relative">
+                                <div class="px-4 py-2 px-md-1 bg-secondary text-white text-center events-rate">Berat badan berlebih</div>
+                                
+                                <div class="row mb-3 px-md-3">
+                                    <div class="col-lg-12"><br><br><br>
+                                        <h5 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Diet Seimbang. Mengatur pola makan anak dengan lebih memperhatikan kualitas dan kuantitas makanan. Kurangi konsumsi makanan tinggi gula, lemak jenuh, dan makanan cepat saji</h5>
+                                        <h5 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Olahraga Teratur: Anak perlu diajak untuk berolahraga setidaknya 1 jam setiap hari. Aktivitas fisik yang disarankan meliputi berjalan cepat, berlari, berenang, bersepeda, atau aktivitas bermain seperti bola basket atau sepak bola</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+        <!-- Edukasi Orangtua End-->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4 col-xl-5">
+                        <div class="footer-item">
+                            <h2 class="fw-bold mb-3"><span class="text-primary mb-0">Kelompok</span><span class="text-secondary">6</span></h2>
+                            <p class="mb-4">Terima kasih kami ucapkan kepada Dosen pembimbing lapangan Ibu Ns Cindy Febriyeni, M.kep., Sp.Kep.A dan semua anggota kelompok 6, serta pihak-pihak terkait yang telah memberikan dukungan dan saran yang membangun sehingga kami dapat menyelesaikan website NutriSmart untuk anak dalam Mata Kuliah Projek MBKM dengan sangat baik</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">LOKASI</h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a href="" class="text-body mb-4"><i class="fa fa-map-marker-alt text-primary me-2"></i>Jl. Tamtama No.6, Labuh Baru Timur, Kec. Payung Sekaki, Kota Pekanbaru, Riau 28292</a>
+                                <a href="" class="text-start rounded-0 text-body mb-4"><i class="fa fa-phone-alt text-primary me-2"></i>0858 3754 9492</a>
+                                <a href="" class="text-start rounded-0 text-body mb-4"><i class="fas fa-envelope text-primary me-2"></i>info@payungnegeri.ac.id</a>
+                                <a href="" class="text-start rounded-0 text-body mb-4"><i class="fa fa-clock text-primary me-2"></i> 26/7 Hours Service</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">FOLLOW US</h4>
+                            <div class="row g-3">
+                                <div class="footer-icon d-flex">
+                                    <a class="btn btn-primary btn-sm-square me-3 rounded-circle text-white" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-primary btn-sm-square me-3 rounded-circle text-white" href=""><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/nutrismart_6?igsh=MXhoMWpiZzhvbmR4eQ==" class="btn btn-primary btn-sm-square me-3 rounded-circle text-white"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="btn btn-primary btn-sm-square rounded-circle text-white"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>NutriSmart</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 my-auto text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://www.instagram.com/nutrismart_6?igsh=MXhoMWpiZzhvbmR4eQ==">Kelompok 6</a> Distributed By <a clas="border-bottom" href="https://www.payungnegeri.ac.id">IKES PN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main-1.js"></script>
+    </body>
+
+</html>
